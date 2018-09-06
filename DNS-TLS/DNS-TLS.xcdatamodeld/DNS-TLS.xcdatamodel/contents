@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13196.5" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Request" representedClassName="Request" syncable="YES" codeGenerationType="class">
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="qname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qtime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quuid" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="response" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Response" inverseName="request" inverseEntity="Response" syncable="YES"/>
+    </entity>
+    <entity name="Resolver" representedClassName="Resolver" syncable="YES" codeGenerationType="class"/>
+    <entity name="Response" representedClassName="Response" syncable="YES" codeGenerationType="class">
+        <attribute name="rcode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rtime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="request" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Request" inverseName="response" inverseEntity="Request" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Request" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Response" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="Resolver" positionX="-36" positionY="45" width="128" height="45"/>
+    </elements>
+</model>

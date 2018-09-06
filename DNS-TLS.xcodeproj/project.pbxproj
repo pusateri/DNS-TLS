@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F81329291F22587700F97139 /* ServerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81329281F22587700F97139 /* ServerTableViewController.swift */; };
+		F84A90701F03430D00838FAD /* ConfigurationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A906F1F03430D00838FAD /* ConfigurationTableViewController.swift */; };
+		F85415731F02D578003A86EB /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F855A2611F00565400D0846A /* NetworkExtension.framework */; };
+		F855A2621F00565400D0846A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F855A2611F00565400D0846A /* NetworkExtension.framework */; };
+		F86373D81F24A95D0011032E /* LoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86373D71F24A95D0011032E /* LoggingViewController.swift */; };
+		F86374181F250E1C0011032E /* DNS-TLS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F86374161F250E1C0011032E /* DNS-TLS.xcdatamodeld */; };
+		F8DB25431EFDBEAA00C6D967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB25421EFDBEAA00C6D967 /* AppDelegate.swift */; };
+		F8DB25481EFDBEAA00C6D967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DB25461EFDBEAA00C6D967 /* Main.storyboard */; };
+		F8DB254A1EFDBEAA00C6D967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DB25491EFDBEAA00C6D967 /* Assets.xcassets */; };
+		F8DB254D1EFDBEAA00C6D967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DB254B1EFDBEAA00C6D967 /* LaunchScreen.storyboard */; };
+		F8DB25581EFDBEAA00C6D967 /* DNS_TLSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB25571EFDBEAA00C6D967 /* DNS_TLSTests.swift */; };
+		F8DB25631EFDBEAA00C6D967 /* DNS_TLSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB25621EFDBEAA00C6D967 /* DNS_TLSUITests.swift */; };
+		F8DB25771EFDBEEA00C6D967 /* DNSProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB25761EFDBEEA00C6D967 /* DNSProxyProvider.swift */; };
+		F8DB257C1EFDBEEA00C6D967 /* DNS-TLS-Proxy.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F8DB25741EFDBEEA00C6D967 /* DNS-TLS-Proxy.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8F379FE1F23592B00C58593 /* TLSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F379FD1F23592B00C58593 /* TLSServer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8DB25541EFDBEAA00C6D967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8DB25371EFDBEAA00C6D967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8DB253E1EFDBEAA00C6D967;
+			remoteInfo = "DNS-TLS";
+		};
+		F8DB255F1EFDBEAA00C6D967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8DB25371EFDBEAA00C6D967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8DB253E1EFDBEAA00C6D967;
+			remoteInfo = "DNS-TLS";
+		};
+		F8DB257A1EFDBEEA00C6D967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8DB25371EFDBEAA00C6D967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8DB25731EFDBEEA00C6D967;
+			remoteInfo = "DNS-TLS-Proxy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8DB25801EFDBEEA00C6D967 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8DB257C1EFDBEEA00C6D967 /* DNS-TLS-Proxy.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F81329281F22587700F97139 /* ServerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTableViewController.swift; sourceTree = "<group>"; };
+		F84A906F1F03430D00838FAD /* ConfigurationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewController.swift; sourceTree = "<group>"; };
+		F85415741F02D578003A86EB /* DNS-TLS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DNS-TLS.entitlements"; sourceTree = "<group>"; };
+		F855A2611F00565400D0846A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		F86373D71F24A95D0011032E /* LoggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingViewController.swift; sourceTree = "<group>"; };
+		F86374171F250E1C0011032E /* DNS-TLS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DNS-TLS.xcdatamodel"; sourceTree = "<group>"; };
+		F8DB253F1EFDBEAA00C6D967 /* DNS-TLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DNS-TLS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DB25421EFDBEAA00C6D967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8DB25471EFDBEAA00C6D967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8DB25491EFDBEAA00C6D967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8DB254C1EFDBEAA00C6D967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8DB254E1EFDBEAA00C6D967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DB25531EFDBEAA00C6D967 /* DNS-TLSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DNS-TLSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DB25571EFDBEAA00C6D967 /* DNS_TLSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNS_TLSTests.swift; sourceTree = "<group>"; };
+		F8DB25591EFDBEAA00C6D967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DB255E1EFDBEAA00C6D967 /* DNS-TLSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DNS-TLSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DB25621EFDBEAA00C6D967 /* DNS_TLSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNS_TLSUITests.swift; sourceTree = "<group>"; };
+		F8DB25641EFDBEAA00C6D967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DB25741EFDBEEA00C6D967 /* DNS-TLS-Proxy.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DNS-TLS-Proxy.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DB25761EFDBEEA00C6D967 /* DNSProxyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSProxyProvider.swift; sourceTree = "<group>"; };
+		F8DB25781EFDBEEA00C6D967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DB25791EFDBEEA00C6D967 /* DNS_TLS_Proxy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNS_TLS_Proxy.entitlements; sourceTree = "<group>"; };
+		F8DEAB721F293A3000DC207F /* DNS-TLS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DNS-TLS-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8DEAB741F2A780B00DC207F /* libgetdns.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgetdns.6.dylib; path = ../../../../usr/local/Cellar/getdns/1.1.2/lib/libgetdns.6.dylib; sourceTree = "<group>"; };
+		F8F379FD1F23592B00C58593 /* TLSServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSServer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8DB253C1EFDBEAA00C6D967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85415731F02D578003A86EB /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB25501EFDBEAA00C6D967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB255B1EFDBEAA00C6D967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB25711EFDBEEA00C6D967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F855A2621F00565400D0846A /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F855A2601F00565400D0846A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8DEAB741F2A780B00DC207F /* libgetdns.6.dylib */,
+				F855A2611F00565400D0846A /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8DB25361EFDBEAA00C6D967 = {
+			isa = PBXGroup;
+			children = (
+				F8DB25411EFDBEAA00C6D967 /* DNS-TLS */,
+				F8DB25561EFDBEAA00C6D967 /* DNS-TLSTests */,
+				F8DB25611EFDBEAA00C6D967 /* DNS-TLSUITests */,
+				F8DB25751EFDBEEA00C6D967 /* DNS-TLS-Proxy */,
+				F8DB25401EFDBEAA00C6D967 /* Products */,
+				F855A2601F00565400D0846A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8DB25401EFDBEAA00C6D967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB253F1EFDBEAA00C6D967 /* DNS-TLS.app */,
+				F8DB25531EFDBEAA00C6D967 /* DNS-TLSTests.xctest */,
+				F8DB255E1EFDBEAA00C6D967 /* DNS-TLSUITests.xctest */,
+				F8DB25741EFDBEEA00C6D967 /* DNS-TLS-Proxy.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8DB25411EFDBEAA00C6D967 /* DNS-TLS */ = {
+			isa = PBXGroup;
+			children = (
+				F85415741F02D578003A86EB /* DNS-TLS.entitlements */,
+				F8DB25421EFDBEAA00C6D967 /* AppDelegate.swift */,
+				F84A906F1F03430D00838FAD /* ConfigurationTableViewController.swift */,
+				F81329281F22587700F97139 /* ServerTableViewController.swift */,
+				F86373D71F24A95D0011032E /* LoggingViewController.swift */,
+				F8F379FD1F23592B00C58593 /* TLSServer.swift */,
+				F8DB25461EFDBEAA00C6D967 /* Main.storyboard */,
+				F8DB25491EFDBEAA00C6D967 /* Assets.xcassets */,
+				F8DB254B1EFDBEAA00C6D967 /* LaunchScreen.storyboard */,
+				F86374161F250E1C0011032E /* DNS-TLS.xcdatamodeld */,
+				F8DB254E1EFDBEAA00C6D967 /* Info.plist */,
+			);
+			path = "DNS-TLS";
+			sourceTree = "<group>";
+		};
+		F8DB25561EFDBEAA00C6D967 /* DNS-TLSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB25571EFDBEAA00C6D967 /* DNS_TLSTests.swift */,
+				F8DB25591EFDBEAA00C6D967 /* Info.plist */,
+			);
+			path = "DNS-TLSTests";
+			sourceTree = "<group>";
+		};
+		F8DB25611EFDBEAA00C6D967 /* DNS-TLSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB25621EFDBEAA00C6D967 /* DNS_TLSUITests.swift */,
+				F8DB25641EFDBEAA00C6D967 /* Info.plist */,
+			);
+			path = "DNS-TLSUITests";
+			sourceTree = "<group>";
+		};
+		F8DB25751EFDBEEA00C6D967 /* DNS-TLS-Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				F8DEAB721F293A3000DC207F /* DNS-TLS-Bridging-Header.h */,
+				F8DB25761EFDBEEA00C6D967 /* DNSProxyProvider.swift */,
+				F8DB25781EFDBEEA00C6D967 /* Info.plist */,
+				F8DB25791EFDBEEA00C6D967 /* DNS_TLS_Proxy.entitlements */,
+			);
+			path = "DNS-TLS-Proxy";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8DB253E1EFDBEAA00C6D967 /* DNS-TLS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DB25671EFDBEAA00C6D967 /* Build configuration list for PBXNativeTarget "DNS-TLS" */;
+			buildPhases = (
+				F8DB253B1EFDBEAA00C6D967 /* Sources */,
+				F8DB253C1EFDBEAA00C6D967 /* Frameworks */,
+				F8DB253D1EFDBEAA00C6D967 /* Resources */,
+				F8DB25801EFDBEEA00C6D967 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8DB257B1EFDBEEA00C6D967 /* PBXTargetDependency */,
+			);
+			name = "DNS-TLS";
+			productName = "DNS-TLS";
+			productReference = F8DB253F1EFDBEAA00C6D967 /* DNS-TLS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8DB25521EFDBEAA00C6D967 /* DNS-TLSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DB256A1EFDBEAA00C6D967 /* Build configuration list for PBXNativeTarget "DNS-TLSTests" */;
+			buildPhases = (
+				F8DB254F1EFDBEAA00C6D967 /* Sources */,
+				F8DB25501EFDBEAA00C6D967 /* Frameworks */,
+				F8DB25511EFDBEAA00C6D967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8DB25551EFDBEAA00C6D967 /* PBXTargetDependency */,
+			);
+			name = "DNS-TLSTests";
+			productName = "DNS-TLSTests";
+			productReference = F8DB25531EFDBEAA00C6D967 /* DNS-TLSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8DB255D1EFDBEAA00C6D967 /* DNS-TLSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DB256D1EFDBEAA00C6D967 /* Build configuration list for PBXNativeTarget "DNS-TLSUITests" */;
+			buildPhases = (
+				F8DB255A1EFDBEAA00C6D967 /* Sources */,
+				F8DB255B1EFDBEAA00C6D967 /* Frameworks */,
+				F8DB255C1EFDBEAA00C6D967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8DB25601EFDBEAA00C6D967 /* PBXTargetDependency */,
+			);
+			name = "DNS-TLSUITests";
+			productName = "DNS-TLSUITests";
+			productReference = F8DB255E1EFDBEAA00C6D967 /* DNS-TLSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F8DB25731EFDBEEA00C6D967 /* DNS-TLS-Proxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DB257D1EFDBEEA00C6D967 /* Build configuration list for PBXNativeTarget "DNS-TLS-Proxy" */;
+			buildPhases = (
+				F8DB25701EFDBEEA00C6D967 /* Sources */,
+				F8DB25711EFDBEEA00C6D967 /* Frameworks */,
+				F8DB25721EFDBEEA00C6D967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DNS-TLS-Proxy";
+			productName = "DNS-TLS-Proxy";
+			productReference = F8DB25741EFDBEEA00C6D967 /* DNS-TLS-Proxy.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8DB25371EFDBEAA00C6D967 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "!j";
+				TargetAttributes = {
+					F8DB253E1EFDBEAA00C6D967 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+						};
+					};
+					F8DB25521EFDBEAA00C6D967 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = F8DB253E1EFDBEAA00C6D967;
+					};
+					F8DB255D1EFDBEAA00C6D967 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = F8DB253E1EFDBEAA00C6D967;
+					};
+					F8DB25731EFDBEEA00C6D967 = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F8DB253A1EFDBEAA00C6D967 /* Build configuration list for PBXProject "DNS-TLS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8DB25361EFDBEAA00C6D967;
+			productRefGroup = F8DB25401EFDBEAA00C6D967 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8DB253E1EFDBEAA00C6D967 /* DNS-TLS */,
+				F8DB25521EFDBEAA00C6D967 /* DNS-TLSTests */,
+				F8DB255D1EFDBEAA00C6D967 /* DNS-TLSUITests */,
+				F8DB25731EFDBEEA00C6D967 /* DNS-TLS-Proxy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8DB253D1EFDBEAA00C6D967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DB254D1EFDBEAA00C6D967 /* LaunchScreen.storyboard in Resources */,
+				F8DB254A1EFDBEAA00C6D967 /* Assets.xcassets in Resources */,
+				F8DB25481EFDBEAA00C6D967 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB25511EFDBEAA00C6D967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB255C1EFDBEAA00C6D967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB25721EFDBEEA00C6D967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8DB253B1EFDBEAA00C6D967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F379FE1F23592B00C58593 /* TLSServer.swift in Sources */,
+				F86374181F250E1C0011032E /* DNS-TLS.xcdatamodeld in Sources */,
+				F86373D81F24A95D0011032E /* LoggingViewController.swift in Sources */,
+				F81329291F22587700F97139 /* ServerTableViewController.swift in Sources */,
+				F84A90701F03430D00838FAD /* ConfigurationTableViewController.swift in Sources */,
+				F8DB25431EFDBEAA00C6D967 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB254F1EFDBEAA00C6D967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DB25581EFDBEAA00C6D967 /* DNS_TLSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB255A1EFDBEAA00C6D967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DB25631EFDBEAA00C6D967 /* DNS_TLSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DB25701EFDBEEA00C6D967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DB25771EFDBEEA00C6D967 /* DNSProxyProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8DB25551EFDBEAA00C6D967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8DB253E1EFDBEAA00C6D967 /* DNS-TLS */;
+			targetProxy = F8DB25541EFDBEAA00C6D967 /* PBXContainerItemProxy */;
+		};
+		F8DB25601EFDBEAA00C6D967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8DB253E1EFDBEAA00C6D967 /* DNS-TLS */;
+			targetProxy = F8DB255F1EFDBEAA00C6D967 /* PBXContainerItemProxy */;
+		};
+		F8DB257B1EFDBEEA00C6D967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8DB25731EFDBEEA00C6D967 /* DNS-TLS-Proxy */;
+			targetProxy = F8DB257A1EFDBEEA00C6D967 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8DB25461EFDBEAA00C6D967 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8DB25471EFDBEAA00C6D967 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8DB254B1EFDBEAA00C6D967 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8DB254C1EFDBEAA00C6D967 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8DB25651EFDBEAA00C6D967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8DB25661EFDBEAA00C6D967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8DB25681EFDBEAA00C6D967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "DNS-TLS/DNS-TLS.entitlements";
+				DEVELOPMENT_TEAM = H34JG5K6Q7;
+				INFOPLIST_FILE = "DNS-TLS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8DB25691EFDBEAA00C6D967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "DNS-TLS/DNS-TLS.entitlements";
+				DEVELOPMENT_TEAM = H34JG5K6Q7;
+				INFOPLIST_FILE = "DNS-TLS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8DB256B1EFDBEAA00C6D967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5T2EKV649X;
+				INFOPLIST_FILE = "DNS-TLSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNS-TLS.app/DNS-TLS";
+			};
+			name = Debug;
+		};
+		F8DB256C1EFDBEAA00C6D967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5T2EKV649X;
+				INFOPLIST_FILE = "DNS-TLSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNS-TLS.app/DNS-TLS";
+			};
+			name = Release;
+		};
+		F8DB256E1EFDBEAA00C6D967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5T2EKV649X;
+				INFOPLIST_FILE = "DNS-TLSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DNS-TLS";
+			};
+			name = Debug;
+		};
+		F8DB256F1EFDBEAA00C6D967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5T2EKV649X;
+				INFOPLIST_FILE = "DNS-TLSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DNS-TLS";
+			};
+			name = Release;
+		};
+		F8DB257E1EFDBEEA00C6D967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DNS-TLS-Proxy/DNS_TLS_Proxy.entitlements";
+				DEVELOPMENT_TEAM = 5T2EKV649X;
+				HEADER_SEARCH_PATHS = /usr/local/opt/getdns/include;
+				INFOPLIST_FILE = "DNS-TLS-Proxy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/getdns/1.1.2/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLS.DNS-TLS-Proxy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DNS-TLS-Proxy/DNS-TLS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8DB257F1EFDBEEA00C6D967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DNS-TLS-Proxy/DNS_TLS_Proxy.entitlements";
+				DEVELOPMENT_TEAM = 5T2EKV649X;
+				HEADER_SEARCH_PATHS = /usr/local/opt/getdns/include;
+				INFOPLIST_FILE = "DNS-TLS-Proxy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/getdns/1.1.2/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLS.DNS-TLS-Proxy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DNS-TLS-Proxy/DNS-TLS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8DB253A1EFDBEAA00C6D967 /* Build configuration list for PBXProject "DNS-TLS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DB25651EFDBEAA00C6D967 /* Debug */,
+				F8DB25661EFDBEAA00C6D967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DB25671EFDBEAA00C6D967 /* Build configuration list for PBXNativeTarget "DNS-TLS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DB25681EFDBEAA00C6D967 /* Debug */,
+				F8DB25691EFDBEAA00C6D967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DB256A1EFDBEAA00C6D967 /* Build configuration list for PBXNativeTarget "DNS-TLSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DB256B1EFDBEAA00C6D967 /* Debug */,
+				F8DB256C1EFDBEAA00C6D967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DB256D1EFDBEAA00C6D967 /* Build configuration list for PBXNativeTarget "DNS-TLSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DB256E1EFDBEAA00C6D967 /* Debug */,
+				F8DB256F1EFDBEAA00C6D967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DB257D1EFDBEEA00C6D967 /* Build configuration list for PBXNativeTarget "DNS-TLS-Proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DB257E1EFDBEEA00C6D967 /* Debug */,
+				F8DB257F1EFDBEEA00C6D967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F86374161F250E1C0011032E /* DNS-TLS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F86374171F250E1C0011032E /* DNS-TLS.xcdatamodel */,
+			);
+			currentVersion = F86374171F250E1C0011032E /* DNS-TLS.xcdatamodel */;
+			path = "DNS-TLS.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F8DB25371EFDBEAA00C6D967 /* Project object */;
+}
