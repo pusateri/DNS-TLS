@@ -86,7 +86,6 @@
 		F8DB25781EFDBEEA00C6D967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8DB25791EFDBEEA00C6D967 /* DNS_TLS_Proxy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNS_TLS_Proxy.entitlements; sourceTree = "<group>"; };
 		F8DEAB721F293A3000DC207F /* DNS-TLS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DNS-TLS-Bridging-Header.h"; sourceTree = "<group>"; };
-		F8DEAB741F2A780B00DC207F /* libgetdns.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgetdns.6.dylib; path = ../../../../usr/local/Cellar/getdns/1.1.2/lib/libgetdns.6.dylib; sourceTree = "<group>"; };
 		F8F379FD1F23592B00C58593 /* TLSServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSServer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +126,6 @@
 		F855A2601F00565400D0846A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8DEAB741F2A780B00DC207F /* libgetdns.6.dylib */,
 				F855A2611F00565400D0846A /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
@@ -567,7 +565,7 @@
 				DEVELOPMENT_TEAM = H34JG5K6Q7;
 				INFOPLIST_FILE = "DNS-TLS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dnsdisco.DNS-TLS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -585,7 +583,7 @@
 				DEVELOPMENT_TEAM = H34JG5K6Q7;
 				INFOPLIST_FILE = "DNS-TLS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dnsdisco.DNS-TLS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -658,7 +656,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "DNS-TLS-Proxy/DNS_TLS_Proxy.entitlements";
-				DEVELOPMENT_TEAM = 5T2EKV649X;
+				DEVELOPMENT_TEAM = H34JG5K6Q7;
 				HEADER_SEARCH_PATHS = /usr/local/opt/getdns/include;
 				INFOPLIST_FILE = "DNS-TLS-Proxy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -666,7 +664,7 @@
 					"$(inherited)",
 					/usr/local/Cellar/getdns/1.1.2/lib,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLS.DNS-TLS-Proxy";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dnsdisco.DNS-TLS.DNS-TLS-Proxy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -680,7 +678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "DNS-TLS-Proxy/DNS_TLS_Proxy.entitlements";
-				DEVELOPMENT_TEAM = 5T2EKV649X;
+				DEVELOPMENT_TEAM = H34JG5K6Q7;
 				HEADER_SEARCH_PATHS = /usr/local/opt/getdns/include;
 				INFOPLIST_FILE = "DNS-TLS-Proxy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -688,7 +686,7 @@
 					"$(inherited)",
 					/usr/local/Cellar/getdns/1.1.2/lib,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bangj.DNS-TLS.DNS-TLS-Proxy";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dnsdisco.DNS-TLS.DNS-TLS-Proxy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
